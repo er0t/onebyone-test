@@ -1,0 +1,72 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 255, 255, 255;
+  --background-rgb: 0, 0, 0;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+  font-family: var(--font-neue-metana), sans-serif;
+}
+
+/* Change text selection color to yellow */
+::selection {
+  background-color: yellow;
+  color: black;
+}
+
+/* For Firefox */
+::-moz-selection {
+  background-color: yellow;
+  color: black;
+}
+
+/* Apply Misto font to important text elements */
+h1, h2, h3, .important-text {
+  font-family: var(--font-misto), sans-serif;
+}
+
+/* Apply NeueMetana font to less important text elements */
+p, span, a, li, button, input, textarea, .secondary-text {
+  font-family: var(--font-neue-metana), sans-serif;
+}
+
+.font-misto {
+  font-family: var(--font-misto), sans-serif;
+}
+
+.font-neue-metana {
+  font-family: var(--font-neue-metana), sans-serif;
+}
+
+/* Add this to your existing styles */
+
+.glow-char {
+  display: inline-block;
+  transition: text-shadow 0.3s ease;
+}
+
+.glow-char:hover {
+  text-shadow: 0 0 20px rgba(0, 0, 255, 0.8), 0 0 30px rgba(0, 0, 255, 0.6), 0 0 40px rgba(0, 0, 255, 0.4);
+}
+
+/* Remove or comment out these styles if they're no longer needed */
+
+/*
+.nav-item {
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.nav-item:hover {
+  color: #0000FF;
+}
+
+.nav-item.active {
+  color: #0000FF;
+  text-shadow: 0 0 10px rgba(0, 0, 255, 0.4), 0 0 20px rgba(0, 0, 255, 0.2);
+}
+*/
